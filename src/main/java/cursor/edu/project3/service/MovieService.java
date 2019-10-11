@@ -1,5 +1,6 @@
 package cursor.edu.project3.service;
 
+import cursor.edu.project3.model.Category;
 import cursor.edu.project3.model.Movie;
 
 import java.util.List;
@@ -12,5 +13,5 @@ public interface MovieService {
 
     List<Movie> getAllMovies();
 
-    List<Movie> getMoviesByCategory(String category);
+    List<Movie> getMoviesByCategory(Category category);
 }

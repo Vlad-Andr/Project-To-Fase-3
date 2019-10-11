@@ -21,7 +21,7 @@ public class ReviewController {
         return reviewService.findAllByMovieId(movieId);
     }
 
-    @PostMapping("add")
+    @PostMapping
     public ResponseEntity addReview(@RequestBody Review review) {
         reviewService.addReviewToMovie(review);
         return ResponseEntity

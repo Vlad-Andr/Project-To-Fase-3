@@ -1,5 +1,6 @@
 package cursor.edu.project3.service;
 
+import cursor.edu.project3.model.Category;
 import cursor.edu.project3.model.Movie;
 import cursor.edu.project3.repo.MovieRepo;
 import org.springframework.stereotype.Service;
@@ -32,7 +33,7 @@ public class MovieImpl implements MovieService {
     }
 
     @Override
-    public List<Movie> getMoviesByCategory(String category) {
+    public List<Movie> getMoviesByCategory(Category category) {
         return movieRepo.findAllByCategory(category);
     }
 

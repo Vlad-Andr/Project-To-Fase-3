@@ -17,6 +17,6 @@ public class Movie {
 
     private Rate rate;
 
-    private String category;
+    private Category category;
 
 }

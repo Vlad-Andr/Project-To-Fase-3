@@ -1,5 +1,6 @@
 package cursor.edu.project3.controller;
 
+import cursor.edu.project3.model.Category;
 import cursor.edu.project3.model.Movie;
 import cursor.edu.project3.service.MovieImpl;
 import org.springframework.http.HttpStatus;
@@ -40,7 +41,7 @@ public class MovieController {
     }
 
     @GetMapping("{category}")
-    public List<Movie> getMoviesByCategory(@PathVariable String category) {
+    public List<Movie> getMoviesByCategory(@PathVariable Category category) {
         return movieService.getMoviesByCategory(category);
     }
 
